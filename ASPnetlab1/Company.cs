@@ -3,13 +3,15 @@
     public class Company
     {
         public string Name { get; set; }
-        public int StocksCount { get; set; }
+        public long StocksCount { get; set; }
         public float StocksPrice { get; set; }
-        public Company(string name, int stockscount, float stocksprice)
+        public int Employees { get; set; }
+        public Company(string name, long stockscount, float stocksprice, int employees)
         {
             this.Name = name;
             this.StocksCount = stockscount;
             this.StocksPrice = stocksprice;
+            this.Employees = employees;
         }
     }
 }
